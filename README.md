@@ -29,7 +29,8 @@ Valkey
 참석자
 ------
 
-|이름|github|
-|------|---|
-|강대명|https://github.com/charsyam|
+| 이름  |github|
+|-----|---|
+| 강대명 |https://github.com/charsyam|
+| 곽정아 |https://github.com/JungahGoak|
 
