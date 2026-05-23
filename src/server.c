@@ -4980,7 +4980,10 @@ void echoCommand(client *c) {
 }
 
 void echoJungahCommand(client *c) {
-    addReplyBulk(c, c->argv[1]);
+    sds input = objectGetVal(c->argv[1]);
+    sds reply = sdsempty();
+    reply = sdscatfmt(reply, "echo2_%S", input);
+    addReplyBulkSds(c, reply);
 }
 
 void timeCommand(client *c) {
